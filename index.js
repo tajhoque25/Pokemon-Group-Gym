@@ -148,3 +148,18 @@ jordansDeck.addToPokedex(psyduck)
 // ---------REPLACES 'POKEMON' WITHIN TITLE WITH TRAINER'S FIRST NAME-----------
 
 headerName.innerHTML = jordansDeck.fname + "'s";
+
+// ---- Rafiq & Taj's Pokemon ------------------------------
+
+let getPokemon = () => {
+  let id = [10,11,12,80,81,82];
+
+  id.forEach(item => {
+    let newPokemon = new Pokemon(item)
+    jordansDeck.addToPokedex(newPokemon)
+  })
+  
+}
+
+getPokemon();
+
