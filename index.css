@@ -1,0 +1,195 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  padding: 0 5% 4% 5%;
+  background-color: #CC0A3E;
+  /* background-color: #FE0700; */
+}
+
+#title {
+  font-family: 'Russo One', sans-serif;
+  text-align: center;
+  /* font-size: 22px; */
+  margin: 0;
+}
+
+nav {
+  background-color: white;
+  margin: 0 auto;
+
+}
+
+#gray_border {
+  position: absolute;
+  top: 140px;
+  width: 350px;
+  height: 320px;
+  background-color: #B2B1B2;
+  border-radius: 5%;
+  box-shadow: 0 3px #034c03;
+}
+
+#main_screen {
+  margin: 0 auto;
+  top: 170px;
+  left: 8.3vw;
+  width: 270px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75% 75%;
+  border-radius: 5%;
+  background-color: #234951;
+  border: 6px solid #183238;
+  padding: 1% 0 0 0;
+  transition: .1s;
+}
+
+#blue_circle_button {
+  position: absolute;
+  top: 470px;
+  left: 80px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #327AFC;
+  box-shadow: -2px 2px #034c03;
+}
+
+#yellow_screen{
+  position: absolute;
+  top: 570px;
+  left: 160px;
+  width: 150px;
+  height: 70px;
+  background-color: #FCFA04;
+  border-radius: 5%;
+  box-shadow: -2px 3px #7c4b01;
+}
+
+#main_screen, #second_screen {
+  position: absolute;
+}
+
+#second_screen {
+  top: 180px;
+  left: 65vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 300px;
+  height: 170px;
+
+  border-radius: 5%;
+  background-color: #16FD00;
+  border: 6px solid #095e00;
+  text-align: center;
+}
+
+#second_screen h4 {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.quadrent {
+  display: inline-block;
+}
+
+#name_of_pokemon {
+  text-align: center;
+  color: white;
+  font-size: 1.1em;
+  transition: .1s;
+}
+
+.abilities {
+  font-size: 8px;
+  margin: 7px 15px;
+  text-align: left;
+}
+
+button {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  /* text-align: center; */
+  font-size: 2em;
+  margin: 0 1%;
+  /* border: 0; */
+}
+
+#d-pad {
+  width: 10%;
+  position: absolute;
+  top: 470px;
+  left: 25vw;
+}
+
+/* --------------------------------FAUX BUTTONS--------------------------------*/
+
+#blue_set {
+  position: absolute;
+  top: 380px;
+  left: 67.5vw;
+  width: 20vw;
+  height: 70px;
+  background-image: url('img/blue-button-set.jpg');
+  background-size: 100% 100%;
+}
+
+#orange_circle, #green_circle{
+  position: absolute;
+  top: 470px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+#orange_circle{
+  background-color: #FC9A04;
+  left: 67.5vw;
+  width: 2vw;
+  box-shadow: -2px 2px #963c04;
+}
+
+#green_circle {
+  background-color: #16FD00;
+  left: 70.5vw;
+  width: 2vw;
+  box-shadow: -2px 2px #034c03;
+}
+
+#orange_oval {
+  position: absolute;
+  top: 475px;
+  background-color: #FC9A04;
+  left: 79vw;
+  width: 3.8vw;
+  border-radius: 40%;
+  height: 10px;
+  box-shadow: -2px 2px #963c04;
+}
+
+#green_oval {
+  position: absolute;
+  top: 475px;
+  background-color: #16FD00;
+  left: 83.8vw;
+  width: 3.8vw;
+  border-radius: 40%;
+  height: 10px;
+  box-shadow: -2px 2px #034c03;
+}
+
+.orange_screens{
+  position: absolute;
+  top: 570px;
+  left: 79vw;
+  width: 11.5vw;
+  height: 60px;
+  background-color: #FC9A04;
+  border-radius: 5%;
+  box-shadow: -2px 3px #7c4b01;
+}
+
+#first_orange_screen {
+  left: 65vw;
+}

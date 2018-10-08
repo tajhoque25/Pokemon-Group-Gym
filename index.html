@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <div class="wrapper">
+      <nav>
+        <h1 id="title"><span id=headerName>Pokémon</span> Pokédex</h1>
+      </nav>
+      <div id="gray_border"></div>
+        <div id="main_screen">
+          <h1 id="name_of_pokemon"></h1>
+        </div>
+
+      <div id="first_screen_faux_buttons">
+        <div id="blue_circle_button"></div>
+        <div id="yellow_screen"></div>
+
+      </div>
+
+      <div id="second_screen">
+        <div class='quadrent'>
+          <h4>Height:</h4>
+          <p id="height"></p>
+        </div>
+
+        <div class='quadrent'>
+          <h4>HP:</h4>
+          <p id="hp"></p>
+        </div>
+        <div class='quadrent'>
+          <h4>Attack:</h4>
+          <p id="attack"></p>
+        </div>
+        <div class='quadrent'>
+          <h4>Abilities:</h4>
+          <li class= 'abilities' id="abilities1"></li>
+          <li class= 'abilities' id="abilities2"></li>
+          <li class= 'abilities' id="abilities3"></li>
+        </div>
+      </div>
+
+                                  <!-- BUTTONS -->
+
+      <div id="d-pad">
+        <button type="button" id="left"><ion-icon name="arrow-dropleft"></ion-icon></button>
+        <button type="button" id="right"><ion-icon name="arrow-dropright"></ion-icon></button>
+      </div>
+    </div>
+
+    <div id="second_screen_faux_buttons">
+      <div id="blue_set"></div>
+      <div id="orange_circle"></div>
+      <div id="green_circle"></div>
+
+      <div id="orange_oval"></div>
+      <div id="green_oval"></div>
+
+      <div class="orange_screens" id="first_orange_screen"></div>
+      <div class="orange_screens"></div>
+    </div>
+
+
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
