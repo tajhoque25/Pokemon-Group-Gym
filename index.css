@@ -1,20 +1,23 @@
 body {
   font-family: 'Press Start 2P', cursive;
-  padding: 0 5% 4% 5%;
+  /* padding: 0 5% 4% 5%; */
   background-color: #CC0A3E;
+  margin: 0;
   /* background-color: #FE0700; */
 }
 
 #title {
   font-family: 'Russo One', sans-serif;
   text-align: center;
-  /* font-size: 22px; */
-  margin: 0;
+  font-size: 27px;
+  margin: 0 auto;
 }
 
 nav {
   background-color: white;
-  margin: 0 auto;
+  margin: 0;
+  padding: 1%;
+  box-shadow: 0 2px 5px black;
 
 }
 
@@ -22,6 +25,7 @@ nav {
   position: absolute;
   top: 140px;
   width: 350px;
+  left: 70px;
   height: 320px;
   background-color: #B2B1B2;
   border-radius: 5%;
@@ -63,7 +67,7 @@ nav {
   height: 70px;
   background-color: #FCFA04;
   border-radius: 5%;
-  box-shadow: -2px 3px #7c4b01;
+  box-shadow: 0 3px #7c4b01;
 }
 
 #main_screen, #second_screen {
