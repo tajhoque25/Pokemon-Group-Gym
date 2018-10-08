@@ -21,31 +21,13 @@ nav {
 
 }
 
-#gray_border {
-  position: absolute;
-  top: 140px;
-  width: 350px;
-  left: 70px;
-  height: 320px;
-  background-color: #B2B1B2;
-  border-radius: 5%;
-  box-shadow: 0 3px #034c03;
-}
-
 #main_screen {
-  margin: 0 auto;
-  top: 170px;
-  left: 8.3vw;
-  width: 270px;
-  height: 200px;
+  
+  width: 250px;
+  height: 250px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 75% 75%;
-  border-radius: 5%;
-  background-color: #234951;
-  border: 6px solid #183238;
-  padding: 1% 0 0 0;
-  transition: .1s;
+  background-size: contain;
 }
 
 #blue_circle_button {
@@ -122,7 +104,7 @@ button {
 }
 
 #d-pad {
-  width: 10%;
+  width: 100px;
   position: absolute;
   top: 470px;
   left: 25vw;
