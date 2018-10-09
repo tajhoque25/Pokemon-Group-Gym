@@ -4,6 +4,8 @@ body {
   background-color: #CC0A3E;
   margin: 0;
   /* background-color: #FE0700; */
+  animation-name: fadeIn;
+  animation-duration: 3s;
 }
 
 #title {
@@ -11,6 +13,10 @@ body {
   text-align: center;
   font-size: 27px;
   margin: 0 auto;
+  animation-name: spin;
+  animation-duration: .5s;
+  animation-iteration-count: 3;
+  animation-timing-function: linear;
 }
 
 nav {
@@ -194,6 +200,20 @@ button {
   border-radius: 5%;
   box-shadow: -2px 3px #7c4b01;
 }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes fadeIn {
+   0% {opacity: 0;}
+   100% {opacity: 1;}
+} 
 
 #first_orange_screen {
   left: 65vw;
