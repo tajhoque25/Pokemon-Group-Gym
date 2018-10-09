@@ -109,6 +109,7 @@ nav {
   font-size: 8px;
   margin: 7px 15px;
   text-align: left;
+  list-style: none;
 }
 
 button {
@@ -197,3 +198,4 @@ button {
 #first_orange_screen {
   left: 65vw;
 }
+
