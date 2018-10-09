@@ -129,7 +129,8 @@ nav {
 }
 
 #left, #right {
-  font-size: 5em;
+  font-size: 6em;
+  color: gray;
 }
 
 #background {

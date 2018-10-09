@@ -45,6 +45,28 @@ leftButton.addEventListener('click', function() {
   }
 })
 
+// Hover Animation
+
+leftButton.addEventListener('mouseover', function() {
+  leftButton.style.color = 'black';
+  leftButton.style.transition = '.2s';
+})
+
+leftButton.addEventListener('mouseout', function() {
+  leftButton.style.color = 'gray';
+  leftButton.style.transition = '.2s';
+})
+
+rightButton.addEventListener('mouseover', function() {
+  rightButton.style.color = 'black';
+  rightButton.style.transition = '.2s';
+})
+
+rightButton.addEventListener('mouseout', function() {
+  rightButton.style.color = 'gray';
+  rightButton.style.transition = '.2s';
+})
+
 // -----------------------------------END---------------------------------------
 
 
