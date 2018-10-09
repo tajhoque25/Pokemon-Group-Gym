@@ -98,7 +98,7 @@ nav {
   height: 20px;
   padding: 5px;
   border-radius: 10px;
-  border: 1px solid;
+  border: 5px solid #526664;
 }
 
 #name_of_pokemon {
@@ -113,21 +113,23 @@ nav {
   list-style: none;
 }
 
-button {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  /* text-align: center; */
-  font-size: 2em;
-  margin: 0 1%;
-  /* border: 0; */
-}
-
 #d-pad {
-  width: 100px;
+  width: 200px;
   position: absolute;
   top: 200px;
-  left: 75vw;
+  left: 70vw;
+}
+
+#left{
+  float: left;
+}
+
+#right{
+  float: right;
+}
+
+#left, #right {
+  font-size: 5em;
 }
 
 #background {
