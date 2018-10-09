@@ -155,22 +155,21 @@ button {
 }
 
 #pad1 {
-  position: absolute;
   top: 500px;
   left: 55px;
+  width: 220px;
+  height: 60px;
 }
 
 #pad2 {
-  position: absolute;
-  top: 253px;
-  left: 460px;
+  top: 255px;
+  left: 450px;
   width: 150px;
-  height: 25px;
+  height: 40px;
 }
 
 .pad {
-  width: 200px;
-  height: 50px;
+  position: absolute;
   background-image: url('img/battlepad1.jpg');
   background-position: center;
   background-repeat: no-repeat;

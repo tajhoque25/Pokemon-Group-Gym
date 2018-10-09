@@ -111,7 +111,7 @@ function dynamicStats() {
 function getAbilities() {
   li.textContent = '' //Set the Text content of the list of abilities to nothing
   console.log(jordansDeck.pokedex[clicks].abilities)
-  //For each entry in abilities set the li text content to this ability 
+  //For each entry in abilities set the li text content to this ability
   jordansDeck.pokedex[clicks].abilities.map(item => {
     li.textContent += `${item.ability.name} `
     quad.appendChild(li)
@@ -179,6 +179,8 @@ let getPokemon = () => {
   })
 
 }
+
+getPokemon()
 
 // ----------------------------DISPLAYING PIKACHU-------------------------------
 
