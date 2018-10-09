@@ -1,9 +1,7 @@
 body {
   font-family: 'Press Start 2P', cursive;
-  /* padding: 0 5% 4% 5%; */
-  background-color: #CC0A3E;
-  margin: 0;
-  /* background-color: #FE0700; */
+  background-size: 100%;
+  background-color: #B22322;
 }
 
 #title {
@@ -59,7 +57,7 @@ nav {
 }
 
 #second_screen {
-  top: 180px;
+  top: 400px;
   left: 65vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -71,6 +69,8 @@ nav {
   background-color: #16FD00;
   border: 6px solid #095e00;
   text-align: center;
+
+  box-shadow: 0 5px 30px black;
 }
 
 #second_screen h4 {
@@ -89,9 +89,10 @@ nav {
   text-align: center;
   background-color: #e0dcc4;
   width: 150px;
-  height: 30px;
-  padding: 1px;
+  height: 20px;
+  padding: 5px;
   border-radius: 10px;
+  border: 1px solid;
 }
 
 #name_of_pokemon {
@@ -118,81 +119,12 @@ button {
 #d-pad {
   width: 100px;
   position: absolute;
-  top: 470px;
+  top: 200px;
   left: 75vw;
 }
 
-/* --------------------------------FAUX BUTTONS--------------------------------*/
-
-#blue_set {
-  position: absolute;
-  top: 380px;
-  left: 67.5vw;
-  width: 20vw;
-  height: 70px;
-  background-image: url('img/blue-button-set.jpg');
-  background-size: 100% 100%;
-}
-
-#orange_circle, #green_circle{
-  position: absolute;
-  top: 470px;
-  height: 25px;
-  border-radius: 50%;
-}
-
-#orange_circle{
-  background-color: #FC9A04;
-  left: 67.5vw;
-  width: 2vw;
-  box-shadow: -2px 2px #963c04;
-}
-
-#green_circle {
-  background-color: #16FD00;
-  left: 70.5vw;
-  width: 2vw;
-  box-shadow: -2px 2px #034c03;
-}
-
-#orange_oval {
-  position: absolute;
-  top: 475px;
-  background-color: #FC9A04;
-  left: 79vw;
-  width: 3.8vw;
-  border-radius: 40%;
-  height: 10px;
-  box-shadow: -2px 2px #963c04;
-}
-
-#green_oval {
-  position: absolute;
-  top: 475px;
-  background-color: #16FD00;
-  left: 83.8vw;
-  width: 3.8vw;
-  border-radius: 40%;
-  height: 10px;
-  box-shadow: -2px 2px #034c03;
-}
-
-.orange_screens{
-  position: absolute;
-  top: 570px;
-  left: 79vw;
-  width: 11.5vw;
-  height: 60px;
-  background-color: #FC9A04;
-  border-radius: 5%;
-  box-shadow: -2px 3px #7c4b01;
-}
-
-#first_orange_screen {
-  left: 65vw;
-}
-
 #background {
+  display: flex;
   position: absolute;
   top: 100px;
   left: 40px;
@@ -204,6 +136,7 @@ button {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  box-shadow: 0 5px 30px black;
 }
 
 #pikachu{
@@ -223,7 +156,7 @@ button {
 
 #pad2 {
   position: absolute;
-  top: 250px;
+  top: 253px;
   left: 460px;
   width: 150px;
   height: 25px;
