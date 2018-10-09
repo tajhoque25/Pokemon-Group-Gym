@@ -21,10 +21,12 @@ nav {
 
 }
 
-#main_screen {
-  
-  width: 250px;
-  height: 250px;
+#pokemon {
+  position: absolute;
+  top: 130px;
+  left: 430px;
+  width: 200px;
+  height: 200px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -80,10 +82,20 @@ nav {
   display: inline-block;
 }
 
-#name_of_pokemon {
+.name_blip {
+  position: absolute;
+  top: 150px;
+  left: 300px;
   text-align: center;
-  color: white;
-  font-size: 1.1em;
+  background-color: #e0dcc4;
+  width: 150px;
+  height: 30px;
+  padding: 1px;
+  border-radius: 10px;
+}
+
+#name_of_pokemon {
+  font-size: 10px;
   transition: .1s;
 }
 
@@ -107,7 +119,7 @@ button {
   width: 100px;
   position: absolute;
   top: 470px;
-  left: 25vw;
+  left: 75vw;
 }
 
 /* --------------------------------FAUX BUTTONS--------------------------------*/
@@ -178,4 +190,52 @@ button {
 
 #first_orange_screen {
   left: 65vw;
+}
+
+#background {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  width: 700px;
+  height: 500px;
+  background-image: url('img/backgrounds.jpg');
+  border: 10px solid;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#pikachu{
+  position: absolute;
+  top: 300px;
+  width: 320px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#pad1 {
+  position: absolute;
+  top: 500px;
+  left: 55px;
+}
+
+#pad2 {
+  position: absolute;
+  top: 250px;
+  left: 460px;
+  width: 150px;
+  height: 25px;
+}
+
+.pad {
+  width: 200px;
+  height: 50px;
+  background-image: url('img/battlepad1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 105% 120%;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px black;
 }

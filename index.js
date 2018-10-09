@@ -1,6 +1,6 @@
 // -------------------ASSIGNING VARIABLES TO HTML ELEMENTS----------------------
 
-var mainScreen = document.getElementById('main_screen');
+var pokemon = document.getElementById('pokemon');
 var secondScreen = document.getElementById('second_screen');
 var pokeName = document.getElementById('name_of_pokemon');
 var leftButton = document.getElementById('left');
@@ -13,6 +13,8 @@ var dynamicAttack = document.getElementById('attack');
 var dynamicAbilities1 = document.getElementById('abilities1');
 var dynamicAbilities2 = document.getElementById('abilities2');
 var dynamicAbilities3 = document.getElementById('abilities3');
+
+var pikachu = document.querySelector('#pikachu');
 
 // -----------------------------EVENT LISTENERS---------------------------------
 
@@ -66,7 +68,7 @@ function ajaxCall() {
 // -----------------------------POKE PIC FUNCTION-------------------------------
 
 function pokePic(x) {
-    mainScreen.style.backgroundImage = "url(" + x['sprites']['front_default'] + ")";
+    pokemon.style.backgroundImage = "url(" + x['sprites']['front_default'] + ")";
 
 }
 
@@ -135,7 +137,7 @@ class Trainer{
   }
 }
 
-var jordansDeck = new Trainer ('Jordan', 'Speed')
+var jordansDeck = new Trainer ('Rafiq and Jordan', 'blank')
 
 jordansDeck.addToPokedex(jigglypuff)
 jordansDeck.addToPokedex(eevee)
@@ -158,8 +160,14 @@ let getPokemon = () => {
     let newPokemon = new Pokemon(item)
     jordansDeck.addToPokedex(newPokemon)
   })
-  
+
 }
 
-getPokemon();
+// ----------------------------DISPLAYING PIKACHU-------------------------------
 
+$.ajax({url:'https://fizal.me/pokeapi/api/25.json',
+success: function(response) {
+  console.log(response)
+  pikachu.style.backgroundImage = "url(" + response['sprites']['back_default'] + ")";
+}
+})
