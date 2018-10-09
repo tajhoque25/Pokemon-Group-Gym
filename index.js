@@ -10,9 +10,13 @@ var headerName = document.getElementById('headerName');
 var dynamicHeight = document.getElementById('height');
 var dynamicHp = document.getElementById('hp');
 var dynamicAttack = document.getElementById('attack');
-var dynamicAbilities1 = document.getElementById('abilities1');
-var dynamicAbilities2 = document.getElementById('abilities2');
-var dynamicAbilities3 = document.getElementById('abilities3');
+
+let quad = document.querySelector('#ability')
+let li = document.createElement('li')
+li.classList.add('abilities')
+// var dynamicAbilities0 = document.getElementById('abilities1');
+// var dynamicAbilities1 = document.getElementById('abilities2');
+// var dynamicAbilities2 = document.getElementById('abilities3');
 
 // -----------------------------EVENT LISTENERS---------------------------------
 
@@ -33,7 +37,6 @@ leftButton.addEventListener('click', function() {
   if(clicks == 0) {
     clicks = jordansDeck.pokedex.length - 1
     ajaxCall()
-    console.log(clicks)
   } else {
     clicks--
     ajaxCall()
@@ -48,13 +51,10 @@ leftButton.addEventListener('click', function() {
 function ajaxCall() {
     $.ajax({url:'https://fizal.me/pokeapi/api/' + jordansDeck.pokedex[clicks].nationalNumb + '.json',
     success: function(response) {
-      console.log(response)
       changeName(response)
       pokePic(response)
       statAssignment(response)
       dynamicStats()
-      console.log(jordansDeck.pokedex[clicks]['name'])
-      console.log(jordansDeck.pokedex[clicks])
     }
   })
 }
@@ -94,9 +94,26 @@ function dynamicStats() {
   dynamicHeight.innerHTML = jordansDeck.pokedex[clicks].height
   dynamicHp.innerHTML = jordansDeck.pokedex[clicks].hp
   dynamicAttack.innerHTML = jordansDeck.pokedex[clicks].attack
-  dynamicAbilities1.innerHTML = jordansDeck.pokedex[clicks].abilities [0]['ability']['name']
-  dynamicAbilities2.innerHTML = jordansDeck.pokedex[clicks].abilities [1]['ability']['name']
-  dynamicAbilities3.innerHTML = jordansDeck.pokedex[clicks].abilities [2]['ability']['name']
+  getAbilities()
+  // dynamicAbilities0.innerHTML = jordansDeck.pokedex[clicks].abilities [0]['ability']['name']
+  // dynamicAbilities1.innerHTML = jordansDeck.pokedex[clicks].abilities [1]['ability']['name']
+
+  // if(jordansDeck.pokedex[clicks].abilities.length === 3) {
+  //    dynamicAbilities2.innerHTML = jordansDeck.pokedex[clicks].abilities [2]['ability']['name']
+  // }
+
+}
+
+/* Function to Create Dynamic Abilities */
+
+function getAbilities() {
+  li.textContent = '' //Set the Text content of the list of abilities to nothing
+  console.log(jordansDeck.pokedex[clicks].abilities)
+  //For each entry in abilities set the li text content to this ability 
+  jordansDeck.pokedex[clicks].abilities.map(item => {
+    li.textContent += `${item.ability.name} `
+    quad.appendChild(li)
+  })
 }
 
 // ------------------------CREATE A POKEMON  CONSTRUCTOR------------------------
