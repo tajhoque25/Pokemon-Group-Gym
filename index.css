@@ -1,20 +1,27 @@
+
 body {
   font-family: 'Press Start 2P', cursive;
   /* padding: 0 5% 4% 5%; */
   /*background-color: #CC0A3E;*/
   margin: 0;
    background-color: #FE0700; 
-  height: 100vh;
+  /*height: 100vh;*/
 }
 
 #loading--screen {
-  width: 100%;
+  position: absolute;
+  top: 0;
+  width: 100vw;
   text-align: center;
   color: white;
    background-image: url(img/poke-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.main-wrapper {
+  background-color: #FE0700; 
 }
 
 .hidden {

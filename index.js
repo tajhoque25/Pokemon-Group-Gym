@@ -14,12 +14,9 @@ var dynamicAttack = document.getElementById('attack');
 let quad = document.querySelector('#ability')
 let li = document.createElement('li')
 li.classList.add('abilities')
-// var dynamicAbilities0 = document.getElementById('abilities1');
-// var dynamicAbilities1 = document.getElementById('abilities2');
-// var dynamicAbilities2 = document.getElementById('abilities3');
 
 window.addEventListener('load', function() {
-  setTimeout(removeLoadingScreen, 3000)
+  setTimeout(removeLoadingScreen, 5000)
 })
 var pikachu = document.querySelector('#pikachu');
 
