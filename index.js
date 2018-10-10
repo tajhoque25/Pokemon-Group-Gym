@@ -18,6 +18,9 @@ li.classList.add('abilities')
 // var dynamicAbilities1 = document.getElementById('abilities2');
 // var dynamicAbilities2 = document.getElementById('abilities3');
 
+window.addEventListener('load', function() {
+  setTimeout(removeLoadingScreen, 3000)
+})
 var pikachu = document.querySelector('#pikachu');
 
 // -----------------------------EVENT LISTENERS---------------------------------
@@ -222,6 +225,16 @@ let getPokemon = () => {
 }
 
 getPokemon()
+
+function removeLoadingScreen() {
+  //Get Main Screen
+  mainScreen = document.querySelector('.main-wrapper')
+  mainScreen.classList.remove('hidden')
+
+  //Remove loading screen
+  loadingScreen = document.querySelector('#loading--screen')
+  loadingScreen.classList.add('hidden')
+}
 
 // ----------------------------DISPLAYING PIKACHU-------------------------------
 

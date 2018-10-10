@@ -11,10 +11,13 @@
   </head>
 
   <body>
-        <div id='loading--screen'>
-      <h1 id='loading--screen-title'>LOADING PLEASE WAIT</h1>
-      <img src="img/pokeball.gif" id='ball'>
-    </div>
+        <div id='loading--screen' class=''>
+          <h1 id='loading--screen-title'>LOADING PLEASE WAIT</h1>
+          <img src="img/pokeball.gif" id='ball'>
+        </div>
+    
+
+    <div class='main-wrapper hidden'>    
     <nav>
       <h1 id="title"><span id=headerName>Pokémon</span> Gym</h1>
     </nav>
@@ -59,13 +62,13 @@
         <ion-icon id="left"name="ios-arrow-back"></ion-icon>
         <ion-icon  id="right"name="ios-arrow-forward"></ion-icon>
       </div>
-    </div>
+
 
     <!-- Autoplays for non Chrome browsers -->
     <audio controls autoplay id="music">
       <source src="audio/115-battle (vs trainer).mp3" type="audio/mp3">
     </audio>
-
+  </div>
 
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
     <script type="text/javascript" src="index.js"></script>

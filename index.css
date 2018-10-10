@@ -1,11 +1,37 @@
 body {
   font-family: 'Press Start 2P', cursive;
   /* padding: 0 5% 4% 5%; */
-  background-color: #CC0A3E;
+  /*background-color: #CC0A3E;*/
   margin: 0;
-  /* background-color: #FE0700; */
-  animation-name: fadeIn;
-  animation-duration: 3s;
+   background-color: #FE0700; 
+  height: 100vh;
+}
+
+#loading--screen {
+  width: 100%;
+  text-align: center;
+  color: white;
+   background-image: url(img/poke-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.hidden {
+  display: none;
+}
+  
+#ball {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: moveLeftToRight;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  z-index: 2;
 }
 
 #music {
