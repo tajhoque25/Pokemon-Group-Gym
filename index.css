@@ -8,6 +8,14 @@ body {
   animation-duration: 3s;
 }
 
+#music {
+  position: absolute;
+  top: 630px;
+  left: 83vw;
+
+  width: 200px;
+}
+
 #title {
   font-family: 'Russo One', sans-serif;
   text-align: center;
@@ -37,6 +45,17 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
+@keyframes pokemonslidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0
+  }
+}
+
+
 
 
 #blue_circle_button {
@@ -150,6 +169,7 @@ nav {
 
   animation-name: slideinpikachu;
   animation-duration: 1.5s;
+  animation-iteration-count: 1;
 }
 
 @keyframes slideinpikachu {

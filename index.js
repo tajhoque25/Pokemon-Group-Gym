@@ -29,6 +29,7 @@ rightButton.addEventListener('click', function() {
   if(clicks < jordansDeck.pokedex.length - 1) {
     clicks++
     ajaxCall()
+    pokemonSlideIn()
   } else {
     clicks = 0;
     ajaxCall()
@@ -142,6 +143,20 @@ function getAbilities() {
     li.textContent += `${item.ability.name} `
     quad.appendChild(li)
   })
+}
+
+// ----------------------FUNCTION FOR SLIDE IN ANIMATION------------------------
+
+function pokemonSlideIn() {
+  pokemon.style.animationName = 'pokemonslidein';
+  pokemon.style.animationDuration = '1.2s';
+  pokemon.style.animationDirection = 'alternate';
+}
+
+
+function playMusic() {
+ var song1 = new Audio('audio/115-battle (vs trainer).mp3')
+ return song1
 }
 
 // ------------------------CREATE A POKEMON  CONSTRUCTOR------------------------
