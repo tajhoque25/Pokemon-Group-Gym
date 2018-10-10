@@ -29,7 +29,7 @@ nav {
 
 #pokemon {
   position: absolute;
-  top: 130px;
+  top: 75px;
   left: 430px;
   width: 200px;
   height: 200px;
@@ -37,6 +37,7 @@ nav {
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 
 #blue_circle_button {
   position: absolute;
@@ -47,17 +48,6 @@ nav {
   border-radius: 50%;
   background-color: #327AFC;
   box-shadow: -2px 2px #034c03;
-}
-
-#yellow_screen{
-  position: absolute;
-  top: 570px;
-  left: 160px;
-  width: 150px;
-  height: 70px;
-  background-color: #FCFA04;
-  border-radius: 5%;
-  box-shadow: 0 3px #7c4b01;
 }
 
 #main_screen, #second_screen {
@@ -90,7 +80,7 @@ nav {
 
 .name_blip {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 300px;
   text-align: center;
   background-color: #e0dcc4;
@@ -114,10 +104,10 @@ nav {
 }
 
 #d-pad {
-  width: 200px;
+  width: 250px;
   position: absolute;
   top: 200px;
-  left: 70vw;
+  left: 68vw;
 }
 
 #left{
@@ -129,8 +119,9 @@ nav {
 }
 
 #left, #right {
-  font-size: 6em;
-  color: gray;
+  font-size: 7em;
+  color: black;
+  opacity: 0.5
 }
 
 #background {
@@ -146,26 +137,39 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  overflow: hidden;
 }
 
 #pikachu{
   position: absolute;
-  top: 300px;
+  top: 200px;
   width: 320px;
   height: 320px;
   background-repeat: no-repeat;
   background-size: contain;
+
+  animation-name: slideinpikachu;
+  animation-duration: 1.5s;
+}
+
+@keyframes slideinpikachu {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0;
+  }
 }
 
 #pad1 {
-  top: 500px;
+  top: 400px;
   left: 55px;
   width: 220px;
   height: 60px;
 }
 
 #pad2 {
-  top: 255px;
+  top: 200px;
   left: 450px;
   width: 150px;
   height: 40px;
@@ -194,6 +198,3 @@ nav {
    0% {opacity: 0;}
    100% {opacity: 1;}
 }
-
-#first_orange_screen {
-  left: 65vw;

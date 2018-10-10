@@ -49,21 +49,25 @@ leftButton.addEventListener('click', function() {
 
 leftButton.addEventListener('mouseover', function() {
   leftButton.style.color = 'black';
+  leftButton.style.opacity = '1';
   leftButton.style.transition = '.2s';
 })
 
 leftButton.addEventListener('mouseout', function() {
-  leftButton.style.color = 'gray';
+  leftButton.style.color = 'black';
+  leftButton.style.opacity = '0.5';
   leftButton.style.transition = '.2s';
 })
 
 rightButton.addEventListener('mouseover', function() {
   rightButton.style.color = 'black';
+  rightButton.style.opacity = '1';
   rightButton.style.transition = '.2s';
 })
 
 rightButton.addEventListener('mouseout', function() {
-  rightButton.style.color = 'gray';
+  rightButton.style.color = 'black';
+  rightButton.style.opacity = '0.5';
   rightButton.style.transition = '.2s';
 })
 
