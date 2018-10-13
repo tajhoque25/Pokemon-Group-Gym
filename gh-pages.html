@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pokedex</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+        <div id='loading--screen' class=''>
+          <h1 id='loading--screen-title'>LOADING PLEASE WAIT</h1>
+          <img src="img/pokeball.gif" id='ball'>
+        </div>
+
+
+    <div class='main-wrapper hidden'>
+    <nav>
+      <h1 id="title"><span id=headerName>Pokémon</span> Gym</h1>
+    </nav>
+
+      <div id="background">
+
+        <div class="pad" id="pad1"></div>
+        <div class="pad" id='pad2'></div>
+        <div id="pokemon"></div>
+
+        <div id="pikachu"></div>
+
+        <div class="name_blip">
+          <h1 id="name_of_pokemon"></h1>
+        </div>
+      </div>
+
+      <div id="second_screen">
+        <div class='quadrent'>
+          <h4>Height:</h4>
+          <p id="height"></p>
+        </div>
+
+        <div class='quadrent'>
+          <h4>HP:</h4>
+          <p id="hp"></p>
+        </div>
+        <div class='quadrent'>
+          <h4>Attack:</h4>
+          <p id="attack"></p>
+        </div>
+        <div class='quadrent' id='ability'>
+          <h4>Abilities:</h4>
+        </div>
+      </div>
+
+                                  <!-- BUTTONS -->
+
+      <div id="d-pad">
+        <ion-icon id="left"name="ios-arrow-back"></ion-icon>
+        <ion-icon  id="right"name="ios-arrow-forward"></ion-icon>
+      </div>
+
+      <div id="attack_button">ATTACK</div>
+
+    <audio controls autoplay id="music">
+      <source src="audio/115-battle (vs trainer).mp3" type="audio/mp3">
+    </audio>
+  </div>
+
+    <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
