@@ -6,6 +6,7 @@ var pokeName = document.getElementById('name_of_pokemon');
 var leftButton = document.getElementById('left');
 var rightButton = document.getElementById('right');
 var headerName = document.getElementById('headerName');
+var attackButton = document.querySelector('#attack_button')
 
 var dynamicHeight = document.getElementById('height');
 var dynamicHp = document.getElementById('hp');
@@ -49,7 +50,11 @@ leftButton.addEventListener('click', function() {
   }
 })
 
-// Hover Animation
+attackButton.addEventListener('click', function() {
+  pokemonAttack()
+})
+
+// Hover Animations
 
 leftButton.addEventListener('mouseover', function() {
   leftButton.style.color = 'black';
@@ -74,6 +79,20 @@ rightButton.addEventListener('mouseout', function() {
   rightButton.style.opacity = '0.5';
   rightButton.style.transition = '.2s';
 })
+
+// Attack Button Hover Animation
+
+attackButton.addEventListener('mouseover', function() {
+  attackButton.style.opacity = '0.5';
+  attackButton.style.transition = '.2s';
+})
+
+attackButton.addEventListener('mouseout', function() {
+  attackButton.style.opacity = '1';
+  attackButton.style.transition = '.2s';
+})
+
+
 
 // -----------------------------------END---------------------------------------
 
@@ -160,6 +179,12 @@ function pokemonSlideIn() {
 function playMusic() {
  var song1 = new Audio('audio/115-battle (vs trainer).mp3')
  return song1
+}
+
+function pokemonAttack() {
+  pokemon.style.animationName = 'attack, attack2, attack3';
+  pokemon.style.animationDuration = '1s', '2s', '1s';
+  // pokemon.style.animationDirection = 'reverse';
 }
 
 // ------------------------CREATE A POKEMON  CONSTRUCTOR------------------------

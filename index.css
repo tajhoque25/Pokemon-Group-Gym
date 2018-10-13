@@ -3,7 +3,7 @@ body {
   /* padding: 0 5% 4% 5%; */
   /*background-color: #CC0A3E;*/
   margin: 0;
-   background-color: #FE0700; 
+   background-color: #FE0700;
   height: 100vh;
 }
 
@@ -20,7 +20,7 @@ body {
 .hidden {
   display: none;
 }
-  
+
 #ball {
   width: 250px;
   height: 250px;
@@ -63,21 +63,79 @@ nav {
 
 #pokemon {
   position: absolute;
-  top: 75px;
+  top: 65px;
   left: 430px;
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
+/* -------------------------------ATTACK ANIMATION----------------------------------- */
+@keyframes attack {
+  from{
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20%;
+
+  }
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes attack2 {
+  from {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -50%;
+
+  }
+  to {
+    margin-left: 0;
+  }
+}
+
+@keyframes attack3 {
+  from {
+    width: 180px;
+    height: 180px;
+  }
+  50% {
+    width: 290px;
+    height: 290px;
+  }
+  to{
+    width: 180px;
+    height: 180px;
+  }
+}
+
+#attack_button {
+  position: absolute;
+  top: 290px;
+  left: 890px;
+  width: 200px;
+  /* height: 100px; */
+  background-color: #870000;
+  border-radius: 50%;
+  color: yellow;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 2% 0;
+  border: 10px solid white;
+}
+
+/* ------------------------------------END-------------------------------------- */
 
 @keyframes pokemonslidein {
   from {
     margin-left: 100%;
   }
   to {
-    margin-left: 0
+    margin-left: 0;
   }
 }
 
@@ -151,7 +209,7 @@ nav {
 #d-pad {
   width: 250px;
   position: absolute;
-  top: 200px;
+  top: 170px;
   left: 68vw;
 }
 
@@ -187,7 +245,8 @@ nav {
 
 #pikachu{
   position: absolute;
-  top: 200px;
+  top: 180px;
+  left: 20px;
   width: 320px;
   height: 320px;
   background-repeat: no-repeat;
@@ -208,14 +267,14 @@ nav {
 }
 
 #pad1 {
-  top: 400px;
-  left: 55px;
+  top: 380px;
+  left: 60px;
   width: 220px;
   height: 60px;
 }
 
 #pad2 {
-  top: 200px;
+  top: 175px;
   left: 450px;
   width: 150px;
   height: 40px;

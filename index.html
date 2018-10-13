@@ -15,24 +15,25 @@
           <h1 id='loading--screen-title'>LOADING PLEASE WAIT</h1>
           <img src="img/pokeball.gif" id='ball'>
         </div>
-    
 
-    <div class='main-wrapper hidden'>    
+
+    <div class='main-wrapper hidden'>
     <nav>
       <h1 id="title"><span id=headerName>Pokémon</span> Gym</h1>
     </nav>
 
       <div id="background">
+
         <div class="pad" id="pad1"></div>
+        <div class="pad" id='pad2'></div>
+        <div id="pokemon"></div>
+
         <div id="pikachu"></div>
 
         <div class="name_blip">
           <h1 id="name_of_pokemon"></h1>
         </div>
-
-        <div class="pad" id='pad2'></div>
-        <div id="pokemon"></div>
-        </div>
+      </div>
 
       <div id="second_screen">
         <div class='quadrent'>
@@ -50,9 +51,6 @@
         </div>
         <div class='quadrent' id='ability'>
           <h4>Abilities:</h4>
-         <!--  <li class= 'abilities' id="abilities1"></li>
-          <li class= 'abilities' id="abilities2"></li>
-          <li class= 'abilities' id="abilities3"></li> -->
         </div>
       </div>
 
@@ -63,8 +61,8 @@
         <ion-icon  id="right"name="ios-arrow-forward"></ion-icon>
       </div>
 
+      <div id="attack_button">ATTACK</div>
 
-    <!-- Autoplays for non Chrome browsers -->
     <audio controls autoplay id="music">
       <source src="audio/115-battle (vs trainer).mp3" type="audio/mp3">
     </audio>
