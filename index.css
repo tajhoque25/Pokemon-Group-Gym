@@ -24,6 +24,13 @@ body {
   background-color: #FE0700;
 }
 
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  padding: 0px 46px;
+}
+
 .hidden {
   display: none;
 }
@@ -41,12 +48,9 @@ body {
   z-index: 2;
 }
 
-#music {
-  position: absolute;
-  top: 630px;
-  left: 83vw;
-
-  width: 200px;
+.music {
+  float: right;
+  width: 150px;
 }
 
 #title {
@@ -61,6 +65,7 @@ body {
 }
 
 nav {
+  width: 100%;
   background-color: white;
   margin: 0;
   padding: 1%;
@@ -120,19 +125,16 @@ nav {
   }
 }
 
-#attack_button {
-  position: absolute;
-  top: 290px;
-  left: 890px;
-  width: 200px;
-  /* height: 100px; */
+.attack_button {
+  margin: 0 auto;
+  width: 160px;
   background-color: #870000;
   border-radius: 50%;
   color: yellow;
   text-align: center;
-  font-size: 1.5em;
-  padding: 2% 0;
-  border: 10px solid white;
+  font-size: 1.4em;
+  padding: 20px 0;
+  border: 7px solid white;
 }
 
 /* ------------------------------------END-------------------------------------- */
@@ -146,40 +148,21 @@ nav {
   }
 }
 
-
-
-
-#blue_circle_button {
-  position: absolute;
-  top: 470px;
-  left: 80px;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  background-color: #327AFC;
-  box-shadow: -2px 2px #034c03;
-}
-
-#main_screen, #second_screen {
-  position: absolute;
-}
-
-#second_screen {
-  top: 400px;
-  left: 65vw;
+.stat_screen {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  width: 300px;
+  max-width: 50%;
+  min-width: 207px;
   height: 170px;
-
+  margin: 0 auto;
   border-radius: 5%;
   background-color: #16FD00;
   border: 6px solid #095e00;
   text-align: center;
 }
 
-#second_screen h4 {
+.stat_screen h4 {
   font-size: 10px;
   font-weight: bold;
 }
@@ -213,20 +196,20 @@ nav {
   list-style: none;
 }
 
-#d-pad {
-  width: 250px;
-  position: absolute;
-  top: 170px;
-  left: 68vw;
+.d-pad{
+  margin-top: 35px;
+  text-align: center;
+  max-width: 100%;
+  min-width: 240px;
 }
 
-#left{
+/* #left{
   float: left;
 }
 
 #right{
   float: right;
-}
+} */
 
 #left, #right {
   font-size: 7em;
@@ -234,11 +217,9 @@ nav {
   opacity: 0.5
 }
 
-#background {
-  display: flex;
-  position: absolute;
-  top: 100px;
-  left: 40px;
+.background {
+  position: relative;
+  overflow: hidden;
   width: 700px;
   height: 500px;
   background-image: url('img/backgrounds.jpg');
@@ -247,12 +228,11 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  overflow: hidden;
 }
 
 #pikachu{
   position: absolute;
-  top: 180px;
+  top: 200px;
   left: 20px;
   width: 320px;
   height: 320px;
@@ -274,7 +254,7 @@ nav {
 }
 
 #pad1 {
-  top: 380px;
+  top: 400px;
   left: 60px;
   width: 220px;
   height: 60px;
@@ -309,4 +289,46 @@ nav {
 @keyframes fadeIn {
    0% {opacity: 0;}
    100% {opacity: 1;}
+}
+
+@media(max-width:990px) {
+  .grid-wrapper{
+    grid-template-columns: 1fr;
+    grid-template-rows: .8fr 1fr;
+  }
+  .background {
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+  }
+  #pikachu{
+    top: 120px;
+  }
+  #pad1 {
+    top: 310px;
+  }
+  #pokemon{
+    top: 2px;
+    left: 368px;
+  }
+  #pad2 {
+    top: 113px;
+    left: 392px;
+    width: 126px;
+    height: 43px;
+  }
+  .name_blip {
+    top: 53px;
+    left: 246px;
+    width: 122px;
+  }
+  .d-pad {
+    margin-top: 0px;
+  }
+}
+
+/* ------------------Right Half-------------- */
+
+.d-pad,.attack_button,.stat_screen {
+  margin-bottom: 23px;
 }

@@ -22,51 +22,56 @@
       <h1 id="title"><span id=headerName>Pokémon</span> Gym</h1>
     </nav>
 
-      <div id="background">
+      <div class="grid-wrapper">
 
-        <div class="pad" id="pad1"></div>
-        <div class="pad" id='pad2'></div>
-        <div id="pokemon"></div>
+        <div class="left-half">
+          <div class="background">
 
-        <div id="pikachu"></div>
+            <div class="pad" id="pad1"></div>
+            <div class="pad" id='pad2'></div>
+            <div id="pokemon"></div>
 
-        <div class="name_blip">
-          <h1 id="name_of_pokemon"></h1>
+            <div id="pikachu"></div>
+
+            <div class="name_blip">
+              <h1 id="name_of_pokemon"></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-half">
+          <div class="d-pad">
+            <ion-icon id="left"name="ios-arrow-back"></ion-icon>
+            <ion-icon  id="right"name="ios-arrow-forward"></ion-icon>
+          </div>
+
+          <div class="attack_button">ATTACK</div>
+
+          <div class="stat_screen">
+            <div class='quadrent'>
+              <h4>Height:</h4>
+              <p id="height"></p>
+            </div>
+            <div class='quadrent'>
+              <h4>HP:</h4>
+              <p id="hp"></p>
+            </div>
+            <div class='quadrent'>
+              <h4>Attack:</h4>
+              <p id="attack"></p>
+            </div>
+            <div class='quadrent' id='ability'>
+              <h4>Abilities:</h4>
+            </div>
+          </div>
+          <audio controls autoplay class="music">
+            <source src="audio/115-battle (vs trainer).mp3" type="audio/mp3">
+          </audio>
+
+          </div>
         </div>
       </div>
 
-      <div id="second_screen">
-        <div class='quadrent'>
-          <h4>Height:</h4>
-          <p id="height"></p>
-        </div>
-
-        <div class='quadrent'>
-          <h4>HP:</h4>
-          <p id="hp"></p>
-        </div>
-        <div class='quadrent'>
-          <h4>Attack:</h4>
-          <p id="attack"></p>
-        </div>
-        <div class='quadrent' id='ability'>
-          <h4>Abilities:</h4>
-        </div>
-      </div>
-
-                                  <!-- BUTTONS -->
-
-      <div id="d-pad">
-        <ion-icon id="left"name="ios-arrow-back"></ion-icon>
-        <ion-icon  id="right"name="ios-arrow-forward"></ion-icon>
-      </div>
-
-      <div id="attack_button">ATTACK</div>
-
-    <audio controls autoplay id="music">
-      <source src="audio/115-battle (vs trainer).mp3" type="audio/mp3">
-    </audio>
-  </div>
 
     <script src="https://unpkg.com/ionicons@4.4.4/dist/ionicons.js"></script>
     <script type="text/javascript" src="index.js"></script>

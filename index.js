@@ -1,12 +1,12 @@
 // -------------------ASSIGNING VARIABLES TO HTML ELEMENTS----------------------
 
 var pokemon = document.getElementById('pokemon');
-var secondScreen = document.getElementById('second_screen');
+var secondScreen = document.querySelector('.stat_screen');
 var pokeName = document.getElementById('name_of_pokemon');
 var leftButton = document.getElementById('left');
 var rightButton = document.getElementById('right');
 var headerName = document.getElementById('headerName');
-var attackButton = document.querySelector('#attack_button')
+var attackButton = document.querySelector('.attack_button')
 
 var dynamicHeight = document.getElementById('height');
 var dynamicHp = document.getElementById('hp');
@@ -29,10 +29,12 @@ var clicks = -1;
 rightButton.addEventListener('click', function() {
   if(clicks < jordansDeck.pokedex.length - 1) {
     clicks++
+    console.log('right')
     ajaxCall()
     pokemonSlideIn()
   } else {
     clicks = 0;
+    console.log('right')
     ajaxCall()
   }
 })
@@ -40,9 +42,11 @@ rightButton.addEventListener('click', function() {
 leftButton.addEventListener('click', function() {
   if(clicks == 0) {
     clicks = jordansDeck.pokedex.length - 1
+    console.log('left')
     ajaxCall()
   } else {
     clicks--
+    console.log('left')
     ajaxCall()
   }
 })
